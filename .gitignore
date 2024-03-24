@@ -1,0 +1,11 @@
+node _modules
+.DS_Store
+package-lock.json
+
+echo "# TripAdvisor" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/deschoux/TripAdvisor.git
+git push -u origin main

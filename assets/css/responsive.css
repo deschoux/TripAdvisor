@@ -1,0 +1,217 @@
+/* 
+----------------------------------- 
+MEDIA QUERIES
+----------------------------------- 
+*/
+
+@media (max-width: 1184px) {
+  /* Navigation - max-width: 1184px */
+  .navigation {
+    flex-wrap: wrap;
+  }
+  .navigation > div {
+    width: calc((100% - 30px) / 4);
+  }
+  .navigation > :is(div:nth-child(7), div:nth-child(6)) {
+    display: flex;
+  }
+
+  /* Pictures - max-width: 1184px */
+  .pictures {
+    height: 370px;
+  }
+  .pictures > .col-2 {
+    width: 400px;
+  }
+
+  /* SECTION 1 - max-width: 1184px */
+  .section-1 .col-2 {
+    margin-right: -20px;
+  }
+  .section-1 .carrousel-col {
+    width: calc((100% - 45px) / 3.1);
+  }
+}
+
+/* --------------------------------------------- */
+@media (max-width: 1024px) {
+  /* HEADER - max-width: 1024px */
+  header nav span {
+    display: none;
+  }
+
+  /* Pictures - max-width: 1024px */
+  .pictures {
+    height: 275px;
+  }
+
+  .pictures > .col-2 {
+    width: 33.33%;
+  }
+
+  /* Description - max-width: 1024px */
+  .description {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .description .col-1,
+  .description .col-2 {
+    width: 100%;
+  }
+
+  .description .col-1 {
+    margin-bottom: 60px;
+  }
+
+  .description .col-2 {
+    margin-left: 0px;
+    display: flex;
+  }
+
+  .description .col-2 div:first-child,
+  .description .col-2 div:last-child {
+    width: 50%;
+    height: auto;
+  }
+
+  .description .col-2 div:first-child {
+    border-radius: 16px 0 0 16px;
+  }
+
+  .description .col-2 div:last-child {
+    border-radius: 0 16px 16px 0;
+  }
+
+  /* SECTION 1 - max-width: 1024px */
+  .section-1 .carrousel-col {
+    width: calc((100% - 30px) / 2.5);
+  }
+
+  /* SECTION 2 - max-width: 1024px */
+  .section-2 .col {
+    width: calc((100% - 30px) / 2.5);
+  }
+}
+
+/* --------------------------------------------- */
+@media (max-width: 768px) {
+  /* COMMON RULES - max-width: 768px */
+  h1 {
+    font-size: 32px;
+    margin: 20px 0 0px 0;
+    line-height: 58px;
+  }
+
+  /* HEADER - max-width: 768px*/
+  header nav :is(div:not(:last-child), button) {
+    display: none;
+  }
+
+  header img {
+    width: 132px;
+  }
+
+  header :is(.container > i, .container nav > i) {
+    display: flex;
+  }
+
+  /* MAIN - max-width: 768px*/
+  /* Navigation */
+  .navigation {
+    flex-wrap: nowrap;
+    overflow: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    margin-left: -20px;
+    margin-right: -20px;
+  }
+
+  .navigation::-webkit-scrollbar {
+    display: none;
+  }
+
+  .navigation > div {
+    width: fit-content;
+    flex-shrink: 0;
+  }
+
+  .navigation > div:first-child {
+    margin-left: 20px;
+  }
+
+  /* Pictures - max-width: 768px*/
+  .pictures {
+    margin: 0 -20px 40px -20px;
+  }
+
+  .pictures > .col-2 {
+    display: none;
+  }
+
+  /* Menu - max-width: 768px*/
+  .menu {
+    display: none;
+  }
+
+  /* Description - max-width: 768px*/
+  .description .col-1 p {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .description .col-2 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .description .col-2 > div:first-child,
+  .description .col-2 > div:last-child {
+    width: 100%;
+    min-height: 188px;
+  }
+
+  .description .col-2 div:first-child {
+    border-radius: 16px 16px 0 0;
+  }
+
+  .description .col-2 div:last-child {
+    border-radius: 0 0 16px 16px;
+  }
+
+  /* SECTION 1 - max-width: 768px */
+  .section-1 > div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .section-1 .col-1 {
+    padding-right: 0px;
+    margin-bottom: 40px;
+  }
+
+  .section-1 .col-2 {
+    margin-right: -20px;
+  }
+  .section-1 .col-2 .carrousel-col {
+    width: calc((100% - 30px) / 1.5);
+  }
+
+  .section-1 .col-2 .carrousel-col:last-child {
+    padding-right: 20px;
+    box-sizing: content-box;
+  }
+
+  /* SECTION 2 - max-width: 768px */
+  .section-2 .col {
+    width: calc((100% - 30px) / 1.5);
+  }
+
+  .section-2 .carrousel {
+    margin-right: -20px;
+  }
+
+  .section-2 .col:last-child {
+    padding-right: 20px;
+  }
+}
